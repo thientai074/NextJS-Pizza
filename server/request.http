@@ -1,0 +1,86 @@
+POST  http://localhost:5000/api/products
+Content-Type: application/json
+
+{
+    "title": "aaa3",
+    "desc": "aa",
+    "img": "/img/pizza.png",
+    "prices": [12,13],
+    "extraOptions": [
+      {
+          "text": "Extra Cheese",
+          "price": 2
+      }
+    ]
+}
+
+###
+
+GET http://localhost:5000/api/products
+
+###
+
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+
+{
+  "customer": "aaa1",
+  "address": "ll",
+  "total": 546,
+  "status": 0,
+  "method": 5
+}
+
+###
+PUT  http://localhost:5000/api/products/61f9e73f7d1b71e9a06f6a35
+Content-Type: application/json
+
+
+{
+    "title": "anh eu em nhieu lam",
+    "desc": "aa",
+    "img": "/img/pizza.png",
+    "prices": [12,13],
+    "extraOptions": [
+      {
+          "text": "Extra Cheese",
+          "price": 2
+      }
+    ]
+}
+
+###
+POST http://localhost:5000/api/cart
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJuYW1lIjoidGhpZW50YWkwNzQiLCJlbWFpbCI6bnVsbCwicGljdHVyZSI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS84NTQ0MjY4OD92PTQiLCJzdWIiOiI2MWZkNjIwZTY4N2NjOTI0MzQwN2U1YzQiLCJpYXQiOjE2NDQwMzA3MzEsImV4cCI6MTY0NjYyMjczMX0.lLu3ggHBq2hkYl4ixOxMyZGC9cVHVQPLqo_eOhBlPjvXIQDmf5LlefgMDMqs3IFfqrrR2nXtfuYHfoDAJ2DyXg
+
+{
+  
+  "products": [
+      {
+        "productId": "mskwmsk",
+        
+        "quantity": 2
+      }
+  ]
+
+}
+
+###
+DELETE  http://localhost:5000/api/cart/61fde4824a6eed699d95573a
+
+### 
+PUT http://localhost:5000/api/cart/61fde4824a6eed699d95573a
+Content-Type: application/json
+
+{
+  "userId": "anh yeu em",
+  "products": [
+      {
+        "productId": "mskwmsk",
+        
+        "quantity": 2
+      }
+  ]
+
+}

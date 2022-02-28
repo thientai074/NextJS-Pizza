@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:content;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://api.pizzahut.io/v1/content/en-ca/ca-1/images/pizza/pizza.cheese-lovers.21455ca09617c38f3618f2b525dfed42.1.jpg");
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    padding-top: 20%;
+    font-family: 'Dancing Script', cursive;   
+}
+
+.title {
+    font-size: 50px;
+}
+
+.label {
+    margin: 10px 0;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.registerButton {
+    border: none;
+    border-radius:8px;
+    background-color: aquamarine;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.loginButton {
+    border: none;
+    border-radius:8px;
+    background-color: #ec5e6f !important;
+    margin-left: 6px;
+    width: 70px;
+    height: 30px;
+}

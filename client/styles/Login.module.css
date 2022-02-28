@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:content;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://i.guim.co.uk/img/media/2c63a5c39bb402996a9310f02dc660233cdd0951/0_54_2868_1720/master/2868.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=25fb00b3d3da4d394a0b5f281b84d383");
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    padding-top: 20%;
+    font-family: 'Dancing Script', cursive;   
+}
+
+.title {
+    font-size: 50px;
+}
+
+.label {
+    margin: 10px 0;
+}
+
+.form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.loginButton {
+    border: none;
+    border-radius:8px;
+    background-color: aquamarine;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.registerButton {
+    border: none;
+    border-radius:8px;
+    background-color: #ec5e6f !important;
+    margin-left: 6px;
+    width: 70px;
+    height: 30px;
+}
